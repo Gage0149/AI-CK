@@ -147,7 +147,7 @@
       visual.append(video);
     } else visual.append(makeImage({...item,thumbnail:item.fullImage || item.image || item.poster},'detail-image'));
     const info=el('div','detail-info');
-    info.append(el('div','detail-kicker',page.toUpperCase()+' / '+(item.added || 'THE COLLECTION')));
+    info.append(el('div','detail-kicker',page==='tags' ? item.category : page.toUpperCase()+' / '+(item.added || 'THE COLLECTION')));
     info.append(el('h2','detail-heading',item.title));
     if (item.description) info.append(el('p','detail-description',item.description));
     if (item.tags && item.tags.length) {
@@ -161,6 +161,22 @@
     }
     const favorite=el('button','detail-favorite',isFavorite(item)?'♥ 已收藏':'♡ 收藏这张灵感');
     favorite.type='button';favorite.addEventListener('click',()=>{toggleFavorite(item);favorite.textContent=isFavorite(item)?'♥ 已收藏':'♡ 收藏这张灵感';});
+    if (page==='tags') {
+      const add=el('button','detail-favorite');
+      add.type='button';
+      const refresh=()=>{
+        const selected=state.chosen.has(item.id);
+        add.textContent=selected ? '从拼接板移除' : '加入拼接板';
+        add.setAttribute('aria-pressed',String(selected));
+      };
+      refresh();
+      add.addEventListener('click',()=>{
+        if(state.chosen.has(item.id)) state.chosen.delete(item.id);
+        else state.chosen.add(item.id);
+        refresh();updateComposer();
+      });
+      info.append(add);
+    }
     info.append(favorite);layout.append(visual,info);body.append(layout);
     if (!dialog.open) dialog.showModal();
   }
@@ -173,27 +189,15 @@
       preview.addEventListener('click',()=>openDetail(item));
       card.append(preview);
     }
-    const top=el('div','tag-card-top');top.append(el('span','tag-category',item.category));
-    const heart=el('button','tag-heart'+(isFavorite(item)?' is-liked':''),isFavorite(item)?'♥':'♡');
-    heart.type='button';heart.setAttribute('aria-label',isFavorite(item)?'取消收藏':'收藏 TAG');
-    heart.addEventListener('click',()=>toggleFavorite(item));top.append(heart);card.append(top);
     card.append(el('h3','',item.title));
-    if(item.promptEn) card.append(el('p','tag-english',item.promptEn));
-    if(item.promptZh) card.append(el('p','tag-chinese',item.promptZh));
-    if(item.tags?.length) {
-      const tags=el('div','tag-list');for(const tag of item.tags.slice(0,5)) tags.append(el('span','', '#'+tag));card.append(tags);
-    }
     const actions=el('div','tag-actions');
-    const copyEn=el('button','tag-copy','复制 EN ↗'); copyEn.type='button';copyEn.disabled=!item.promptEn;
-    copyEn.addEventListener('click',()=>copy(item.promptEn));actions.append(copyEn);
-    const copyZh=el('button','tag-copy','复制中文 ↗');copyZh.type='button';copyZh.disabled=!item.promptZh;
-    copyZh.addEventListener('click',()=>copy(item.promptZh));actions.append(copyZh);
-    const add=el('button','tag-add'+(state.chosen.has(item.id)?' is-added':''),state.chosen.has(item.id)?'已添加 ✓':'添加 +');
-    add.type='button';add.setAttribute('aria-pressed',String(state.chosen.has(item.id)));
-    add.addEventListener('click',()=>{
-      if(state.chosen.has(item.id))state.chosen.delete(item.id);else state.chosen.add(item.id);
-      render();
-    });actions.append(add);card.append(actions);return card;
+    const details=el('button','tag-details','查看详情');
+    details.type='button';
+    details.setAttribute('aria-haspopup','dialog');
+    details.setAttribute('aria-label','查看详情：'+item.title);
+    details.addEventListener('click',()=>openDetail(item));
+    actions.append(details);card.append(actions);
+    return card;
   }
   function updateComposer() {
     const chosen=state.items.filter(item => state.chosen.has(item.id));
