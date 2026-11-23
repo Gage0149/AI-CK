@@ -1,0 +1,16 @@
+{
+  "id": "4518c724-bf15-4c1a-9a2e-532594f4c146",
+  "title": "清透手绘水彩插画",
+  "subcategory": "prompt-style",
+  "image": "./assets/demo-scene-01.svg",
+  "thumbnail": "",
+  "fullImage": "",
+  "description": "透明水彩、纸张纹理与低饱和配色的风格示例",
+  "promptZh": "清透的手绘水彩插画，细腻纸张纹理，晕染的颜料边缘，轻盈的笔触，低饱和配色，温柔的光影，简洁而富有呼吸感的画面，艺术画册质感",
+  "promptEn": "Delicate hand-painted watercolor illustration, visible paper texture, soft pigment blooms, light brushstrokes, muted color palette, tender lighting, airy editorial illustration",
+  "tagsText": "水彩, 插画, 风格",
+  "added": "2026-11-22",
+  "featured": false,
+  "published": true,
+  "referrerPolicy": "default"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "cc2360c6-1961-48e4-aa73-1607d0886fec",
+  "title": "光影参考 · 午后窗光",
+  "subcategory": "lighting",
+  "image": "./assets/demo-lighting-01.svg",
+  "thumbnail": "",
+  "fullImage": "",
+  "description": "侧向自然光与柔和阴影的氛围参考",
+  "promptZh": "午后窗边自然侧光，柔和的明暗交界，温暖的阳光色温，轻微空气感，背景渐隐，电影感布光参考，细腻光影层次",
+  "promptEn": "Afternoon window side lighting, gentle light-to-shadow transition, warm color temperature, airy atmosphere, cinematic soft light reference",
+  "tagsText": "光影, 自然光, 氛围",
+  "added": "2026-11-20",
+  "featured": false,
+  "published": true,
+  "referrerPolicy": "default"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "d763d2ea-a981-4c32-9403-f5c244941d02",
+  "title": "道具参考 · 复古相机",
+  "subcategory": "prop",
+  "image": "./assets/demo-prop-01.svg",
+  "thumbnail": "",
+  "fullImage": "",
+  "description": "简约静物道具，适合人物场景搭配",
+  "promptZh": "复古银黑色胶片相机，精致机械旋钮，皮革纹理，干净静物摄影，柔和棚拍光线，白色背景，清晰物体结构",
+  "promptEn": "Vintage silver-and-black film camera, detailed mechanical dials, leather texture, clean product still-life, soft studio light, white background",
+  "tagsText": "道具, 复古, 静物",
+  "added": "2026-11-18",
+  "featured": false,
+  "published": true,
+  "referrerPolicy": "default"
+}

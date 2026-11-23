@@ -1,0 +1,16 @@
+{
+  "id": "f1045c9f-947f-4ba0-9ece-11107b8fc2b1",
+  "title": "日系极简客厅",
+  "subcategory": "scene",
+  "image": "./assets/demo-scene-01.svg",
+  "thumbnail": "",
+  "fullImage": "",
+  "description": "暖色木质家具与柔和日光的室内场景",
+  "promptZh": "日系极简风客厅，浅色橡木家具，奶油色布艺沙发，通透落地窗，午后阳光洒落在木地板上，整洁空间，建筑摄影，温暖自然氛围",
+  "promptEn": "Japanese minimal living room, light oak furniture, cream sofa, large window, warm afternoon sunlight across wooden floor, clean architectural photography",
+  "tagsText": "室内, 日系, 家居",
+  "added": "2026-11-21",
+  "featured": false,
+  "published": true,
+  "referrerPolicy": "default"
+}

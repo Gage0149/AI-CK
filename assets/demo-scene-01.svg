@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 600" width="520" height="600">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaece5"/><stop offset="1" stop-color="#faf7f3"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="9" stdDeviation="14" flood-color="#79695d" flood-opacity=".14"/></filter></defs>
+<rect width="100%" height="100%" fill="url(#bg)"/><circle cx="420" cy="115" r="180" fill="#b7c8b2" opacity=".18"/><circle cx="70" cy="510" r="190" fill="#fff" opacity=".28"/>
+<g><rect x="80" y="108" width="360" height="350" rx="4" fill="#f9f6ef"/><rect x="120" y="145" width="160" height="190" fill="#dce9e7"/><path d="M200 145v190M120 240h160" stroke="#f7f7f3" stroke-width="10"/><path d="M320 310h100v125H320z" fill="#d5b5a1"/><path d="M135 367h240v83H135z" rx="20" fill="#b7b0a1"/><path d="M150 349h95v53h-95zM265 349h95v53h-95z" fill="#c8c1b3"/><path d="M110 465h310" stroke="#b7aa96" stroke-width="8"/><circle cx="355" cy="205" r="38" fill="#e7d6b2"/></g>
+<text x="30" y="43" font-family="Arial,sans-serif" font-size="12" letter-spacing="3" fill="#887b72" opacity=".65">SCENE / 01</text>
+<path d="M30 560H490" stroke="#9b8b80" opacity=".22"/>
+<text x="30" y="580" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#998a7d">POSEWEAR · CREATIVE LIBRARY</text>
+</svg>

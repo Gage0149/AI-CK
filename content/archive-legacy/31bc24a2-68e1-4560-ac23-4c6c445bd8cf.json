@@ -1,0 +1,16 @@
+{
+  "id": "31bc24a2-68e1-4560-ac23-4c6c445bd8cf",
+  "title": "电影胶片感人像摄影",
+  "subcategory": "prompt-photo",
+  "image": "./assets/demo-portrait-01.svg",
+  "thumbnail": "",
+  "fullImage": "",
+  "description": "温柔颗粒、自然肤质与环境光的写真提示词示例",
+  "promptZh": "成年人物，电影胶片风格人像摄影，自然窗光，轻微 35mm 胶片颗粒，柔和肤质，安静松弛的情绪，富有层次的构图，真实皮肤纹理，高级色彩分级",
+  "promptEn": "Adult subject, cinematic film portrait photography, natural window light, subtle 35mm film grain, authentic skin texture, relaxed mood, layered composition, refined color grading",
+  "tagsText": "胶片, 写真, 人像",
+  "added": "2026-11-22",
+  "featured": true,
+  "published": true,
+  "referrerPolicy": "default"
+}
